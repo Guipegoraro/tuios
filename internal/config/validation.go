@@ -115,6 +115,7 @@ func ValidateConfig(cfg *UserConfig) *ValidationResult {
 	validateSection("copy_mode", cfg.Keybindings.CopyMode)
 	validateSection("global", cfg.Keybindings.Global)
 	validateSection("script", cfg.Keybindings.Script)
+	validateSection("gui", cfg.Keybindings.GUI)
 
 	// Validate enum appearance options (warn on unknown values; they fall back to defaults)
 	validateAppearanceEnums(cfg, result)
